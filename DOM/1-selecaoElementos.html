@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elemento1">Elemento 1</div>
+
+    <div class="elemento2">Elemento 2</div>
+
+    <button>Botão</button>
+
+    <input name="elemento4" type="text"/>
+</body>
+
+<script>
+    // SELECIONANDO ELEMENTOS
+
+    // PELO ID (NÃO É PERMITIDO ELEMENTOS COM O MESMO ID)
+    let elemento1 = document.getElementById('elemento1');
+    console.log(elemento1);
+
+    // PELO CLASS (MAIS ELEMENTOS PODEM TER A MESMA CLASS) - A SELEÇÃO RETORNA UMA HTML COLLECTION
+    let elemento2 = document.getElementsByClassName('elemento2');
+    console.log(elemento2);
+
+    // PELO NOME DA TAG DO ELEMENTO HTML - A SELEÇÃO RETORNA UMA HTML COLLECTION
+    let elemento3 = document.getElementsByTagName('button');
+    console.log(elemento3)
+
+    // PELO NOME DO ELEMENTO - A SELEÇÃO RETORNA UM NODELIST
+    let elemento4 = document.getElementsByName("elemento4");
+    console.log(elemento4);
+</script>
+</html>

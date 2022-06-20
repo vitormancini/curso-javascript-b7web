@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #DDD;
+}
+
+body aside {
+    display: flex;
+}
+
+#menu-container {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 5px #AAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+#menu-container ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+#menu-container ul li {
+    margin: 15px 0;
+}
+
+#menu-opener {
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.menu-opened {
+    width: 200px !important;
+}

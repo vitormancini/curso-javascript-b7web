@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .verde {
+        background-color: #00FF00;
+    }
+    .vermelho {
+        background-color: #FF0000;
+    }
+    .azul {
+        background-color: #0000FF;
+    }
+</style>
+
+<body>
+    <div id="nome">Vítor</div>
+    <button onclick="verde()">Verde</button>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="azul()">Azul</button>
+</body>
+
+<script>
+    // PROGRAMA QUE ALTERA A COR DE FUNDO DO ELEMENTO ADICIONANDO UMA CLASSE ESPECÍFICA A ELE
+    function verde() {
+        document.getElementById("nome").classList.add("verde"); // adicionando uma classe
+        document.getElementById("nome").classList.remove("vermelho"); // removendo um elemento
+        document.getElementById("nome").classList.remove("azul");
+
+    }
+    function vermelho() {
+        document.getElementById("nome").classList.add("vermelho");
+        document.getElementById("nome").classList.remove("azul");
+        document.getElementById("nome").classList.remove("verde");
+    }
+    function azul() {
+        document.getElementById("nome").classList.add("azul");
+        document.getElementById("nome").classList.remove("verde");
+        document.getElementById("nome").classList.remove("vermelho");
+    }
+</script>
+
+</html>

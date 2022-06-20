@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // A DIFERENÇA DE UM ARRAY PARA UM OBJETO É QUE UM ARRAY ENUMERADO, E UM OBJETO TEM SEUS ELEMENTOS NOMEADOS (CHAVE, VALOR)
+    let objeto = {
+        nome: "Vítor", 
+        idade: 27, 
+        peso: 95, 
+        falar: function() {
+            this.falando = true
+        }
+    }
+
+    console.log(objeto);
+
+    // ACESSANDO AS PROPRIEDADES DO OBJETO
+    console.log("Nome:" + objeto.nome);
+    console.log("Idade: " + objeto.idade);
+    console.log("Peso: " + objeto.peso);
+
+    // ACESSANDO DADOS DA PRÓRPIA INSTÂNCIA DO OBJETO
+    objeto.falar();
+    console.log(objeto.falando)
+
+    // CRIANDO UM ARRAY DE OBJETOS
+    let arrayObjetos = [
+        {nome: "Vítor", idade: 27},
+        {nome: "Lucas", idade: 25},
+        {nome: "Pedro", idade: 15}
+    ];
+
+    console.log(arrayObjetos);
+
+    // ACESSANDO OS OBJETOS SEPARADAMENTE
+    console.log(arrayObjetos[0].nome);
+    console.log(arrayObjetos[1].nome);
+    console.log(arrayObjetos[2].nome);
+</script>
+</html>

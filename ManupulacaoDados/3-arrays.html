@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let array = ["banana", "maçã", "pera", "uva", "melancia", "goiaba"];
+
+    // CONVERTENDO UM ARRAY PARA STRING
+    let string = array.toString();
+    console.log(string);
+
+    // JUNTANDO SO ELEMENTOS DE UM ARRAY SEPARADOS POR UM CARACTERE ESPECÍFICO
+    let novoArray = array.join("-");
+    console.log(novoArray);
+
+    // PROCURANDO POR UM ELEMENTO DENTRO DO ARRAY (CASO NÃO ENCONTRE RETORNA -1)
+    let index = array.indexOf("pera");
+    console.log(index);
+
+    // REMOVE O ULTIMO ITEM DO ARRAY
+    array.pop();
+    console.log(array);
+
+    // REMOVE O PRIMEIRO ITEM DO ARRAY
+    array.shift();
+    console.log(array);
+
+    // ADICIONA UM NOVO ELEMENTO NA ULTIMA POSIÇÃO
+    array.push("graviola");
+    console.log(array);
+
+    // REMOVE UM ITEM ESPECÍFICO DO ARRAY (ITEM QUE SERÁ REMOVIDO, QTD DE ITENS PARA REMOVER)
+    array.splice(0, 1);
+    console.log(array);
+
+    // CONCATENANDO DOIS ARRAYS
+    let array1 = [1,2,3,4,5];
+    let array2 = [10,11,12];
+    let res = array1.concat(array2);
+    console.log(res);
+
+    // ORDENANDO O ARRAY EM ORDEM ALFABÉTICA
+    array.sort();
+    console.log(array);
+
+    // INVERTENDO A ORDEM DE UM ARRAY
+    array.reverse()
+    console.log(array);
+
+    // FUNÇÃO MAP (PERCORRE O ARRAY E RODA UMA FUNÇÃO PARA CADA ELEMENTO)
+    let arrayOriginal = [1,2,3,4,5,6,7,8,9,10];
+    let arrayGerado = arrayOriginal.map(function(item)  {
+        return item * 2; // dobrando os itens do arrayOriginal
+    });
+
+    console.log(arrayGerado);
+
+    // FUNÇÃO FILTER (RODA UMA FUNÇÃO PARA CADA ELEMENTO DO ARRAY E RETORNA TRUE OU FALSE)
+    let arrayFiltrado = arrayOriginal.filter(function(item) {
+        if(item % 2 === 0) {
+            return true; // retorna apenas os numeros pares
+        }
+        else {
+            return false;
+        }
+    });
+
+    console.log(arrayFiltrado);
+
+    // FUNÇÃO EVERY (RETORNA TRUE SOMENTE SE TODOS OS ITENS DO ARRAY SATISFAZEREM UMA CONDIÇÃO)
+    let arrayParaChecar = [1,3,5,7,9];
+    let resposta = arrayParaChecar.every(function(item) {
+        if(item % 2 !== 0) {
+            return true
+        }
+        else {
+            return false;
+        }
+    });
+
+    console.log(resposta);
+
+    // RETORNA O INDEX DE UM ELEMENTO ESPECÍFICO
+    let indexEncontrado = array.findIndex(function(item) {
+        if(item === "melancia") {
+            return true;
+        }
+        else {
+            return false;
+        }
+    });
+
+    console.log(indexEncontrado);
+
+    // ARRAY DE OBJETOS
+    let arrayObjetos = [
+        {id: 1, nome: "Vítor"},
+        {id: 2, nome: "Lucas"},
+        {id: 3, nome: "Maria"},
+        {id: 4, nome: "José"}
+    ];
+
+    let pessoa = arrayObjetos.find(function(item) {
+        if(item.nome === "Lucas") {
+            return true;
+        }
+        else {
+            return false;
+        }
+    });
+
+    console.log(pessoa);
+
+</script>
+</html>

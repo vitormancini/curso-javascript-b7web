@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // DECLARANDO UM ARRAY
+    let carros = ['Palio', 'Uno', 'Corolla', 'Ferrari'];
+    // ELEMENTOS [   0       1        2          3    ]
+    console.log(carros);
+
+    // TAMBÉM PODEMOS ADICIONAR FUNÇÕES COMO ELEMENTOS DO ARRAY
+    carros[4] = function() {
+        console.log("Acelerando...");
+    }
+
+    console.log("Executando a função do elemento carros[4]: " + carros[4]());
+</script>
+
+</html>

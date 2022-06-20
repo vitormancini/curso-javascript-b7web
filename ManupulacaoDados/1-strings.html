@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // ACESSANDO A QUANTIDADE DE CARACTERES DE UMA STRING
+    let nome = 'Vítor';
+    let qtd = nome.length;
+    console.log(qtd);
+
+    // VERIFICANDO O INDEX DA OCORRÊNCIA DE UMA LETRA OU EXPRESSÃO DENTRO DE UMA STRING (CASO NÃO ENCONTRE, RETORNA -1)
+    let frase = "Olá mundo, hoje é segunda-feira";
+    let index = frase.indexOf('mundo');
+    console.log(index);
+
+    // OBTEM O TRECHO DE UMA STRING (POSIÇÃO INICIAL, POSIÇÃO FINAL)
+    let string = "Olá mundo, hoje é segunda-feira";
+    let trecho = string.slice(0, 10);
+    console.log(trecho);
+
+    // OBTEM O TRECHO DE UMA STRING (POSIÇÃO INICIAL, QTD CARACTERES)
+    let string2 = "Olá mundo, hoje é segunda-feira"; 
+    let trecho2 = string2.substr(5, 3);
+    console.log(trecho2);
+
+    let texto = 'vitor mancini rodrigues'
+
+    let novoTexto = texto.replace('mancini', 'dunha') // substitui 'mancini' por 'dunha' (a string é imutavel, por isso preciso jogar o resultado da substituição em uma variável)
+    novoTexto.toUpperCase() // todos os caracteres ficam maiúsculos
+    novoTexto.toLowerCase() // todos os caracteres ficam minúsculo
+    novoTexto.trim() // retira os espaços de uma string 'vitormancinirodrigues'
+    novoTexto.split(' ') // corta a string onde estiver espaço e gera um array com as informações
+    novoTexto.charAt(3) // devolve o caractere que está na posição 3 (mesmo que novoTexto[3])
+
+</script>
+</html>

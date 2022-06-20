@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="elemento" style="width: 200px; height: 200px; background-color: #CCC;"></div>
+</body>
+
+<script>
+    // ACESSANDO DIMENSÕES DE UM ELEMENTO
+
+    let largura = document.querySelector('.elemento').offsetWidth;
+    console.log('largura: ' + largura);
+
+    // ACESSANDO A ALTURA E LARGURA DE UM ELEMENTO QUE POSSUI BARRA DE ROLAGEM (SCROLL) - FORNECE AS DIMENSÕES TOTAIS
+    // document.querySelector('.elemento').scrollHeight
+    // document.querySelector('.elemento').scrollWidth
+
+    // ACESSANDO A POSIÇÃO DO SCROLL EM RELAÇÃO AO TOPO E EM RELAÇÃO A ESQUERDA
+    // document.querySelector('.elemento').scrollTop;
+    // document.querySelector('.elemento').scrollLeft;
+
+    // MOVENDO O SCROLL PARA O POSIÇÃO ESPECÍFICA DA TELA
+    // document.querySelector('.elemento').scrollTo(0,0);
+
+    // SCROLL SUAVE (MOVENDO PARA O TOPO DA TELA SUAVEMENTE)
+    /* window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });*/
+
+    let altura = document.querySelector('.elemento').offsetHeight;
+    console.log('altura: ' + altura);
+</script>
+</html>
