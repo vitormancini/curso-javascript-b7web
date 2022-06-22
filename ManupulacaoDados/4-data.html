@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // DEMOSTRAÇÃO COMPLETA DA DATA ATUAL
+    let d = new Date();
+    console.log(d);
+
+    // DEFININDO UMA DATA (NO JS OS MESES COMEÇAM DO 0)
+    let data = new Date(2022, 5, 21);
+    console.log(data);
+
+    // DATA COM HORA
+    data = new Date("2022-06-21 11:56");
+    console.log(data);
+
+    // OBTENDO DATA ATUAL SEPARADAMENTE
+    let date = new Date();
+
+    let anoAtual = date.getFullYear();
+    console.log(anoAtual);
+
+    let mesAtual = date.getMonth();
+    console.log(mesAtual); // mes começa do 0
+
+    let diaAtual = date.getDate();
+    console.log(diaAtual);
+
+    let horaAtual = date.getHours();
+    console.log(horaAtual);
+
+    let minutoAtual = date.getMinutes();
+    console.log(minutoAtual);
+
+    let segundoAtual = date.getSeconds()
+    console.log(segundoAtual)
+
+    // SOMANDO DIAS A UMA DATA
+    date = new Date();
+    date.setDate(date.getDate() + 5) // dia atual + 5 dias
+    console.log(date)
+
+</script>
+
+</html>
